@@ -14,7 +14,9 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
+@grayLight2:            #ddd;
 @grayLighter:           #eee;
+@graySuperLight:        #F7F8FA;
 @white:                 #fff;
 
 
@@ -32,7 +34,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
+@bodyBackground:        @graySuperLight;
 @textColor:             @grayDark;
 
 
@@ -41,21 +43,23 @@
 @linkColor:             #08c;
 @linkColorHover:        darken(@linkColor, 15%);
 
-
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "Open Sans", sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          12px;
+@baseFontWeight:        300;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    600;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
+
+@textShadow:            1px 1px 1px rgba(0,0,0,.40);
 
 // Tables
 // -------------------------
