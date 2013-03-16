@@ -12,6 +12,13 @@
 
 // Grays
 // -------------------------
+.labelsOneGrey {
+	color: #787675;
+	font-size: @baseFontSize * 0.9333333333;
+}
+
+@headlineOneColor:		#403F3E;
+
 @black:                 #000;
 @grayBlue:              #1f7099;
 @grayDark3:             #DFE3E6;
@@ -32,6 +39,7 @@
 
 // Accent colors
 // -------------------------
+@pureGreen:				#9cbd37;
 @pureBlue:              #308fbf;
 @blue:                  #049cdb;
 @blueDark:              #0064cd;
@@ -64,7 +72,7 @@
 @baseFontWeight:        200;
 @baseFontWeightBold:    300;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        @baseFontSize * 2;
+@baseLineHeight:        1.5em;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
@@ -86,7 +94,7 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackground:              @pureGreen;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;
@@ -136,12 +144,12 @@
 // -------------------------
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
-@zindexDropdown:          1000;
-@zindexTooltip:           1030;
-@zindexFixedNavbar:       1030;
-@zindexModalBackdrop:     1040;
-@zindexModal:             1050;
-@zindexPopover:           1060;
+@zindexDropdown:          10000;
+@zindexTooltip:           10300;
+@zindexFixedNavbar:       10300;
+@zindexModalBackdrop:     10400;
+@zindexModal:             10500;
+@zindexPopover:           10600;
 
 
 // Sprite icons path
