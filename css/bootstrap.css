@@ -808,7 +808,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 1.7999999999999998em;
+  height: 2.649em;
   padding: 4px 6px;
   margin-bottom: 0;
   font-size: 13px;
@@ -882,13 +882,7 @@ input[type="color"]:focus,
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
-  *margin-top: 0;
-  /* IE7 */
-
-  margin-top: 1px \9;
-  /* IE8-9 */
-
+  margin-right: 3px;
   line-height: normal;
   cursor: pointer;
 }
@@ -1299,6 +1293,7 @@ select:focus:required:invalid:focus {
   *margin-left: 0;
   font-size: 13px;
   vertical-align: top;
+  border-left: 0;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -1315,16 +1310,24 @@ select:focus:required:invalid:focus {
 .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 1.7999999999999998em;
-  min-width: 16px;
-  padding: 4px 5px;
+  height: 2.649em;
+  min-width: 18px;
+  padding: 2px 5px;
   font-size: 13px;
   font-weight: normal;
   line-height: -8.5em;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   border: 1px solid #ccc;
+  border-right: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, box-shadow linear .2s;
+  -o-transition: border linear .2s, box-shadow linear .2s;
+  transition: border linear .2s, box-shadow linear .2s;
 }
 .input-append .add-on,
 .input-prepend .add-on,
