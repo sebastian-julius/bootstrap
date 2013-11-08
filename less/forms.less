@@ -43,7 +43,7 @@ input,
 button,
 select,
 textarea {
-  #font > .shorthand(@baseFontSize,normal,@baseLineHeight); // Set size, weight, line-height here
+  #font > .shorthand(@baseFontSize,@baseFontWeight,@baseLineHeight); // Set size, weight, line-height here
 }
 input,
 button,
@@ -446,7 +446,7 @@ select:focus:required:invalid {
     min-width: 18px;
     padding: 2px 5px;
     font-size: @baseFontSize;
-    font-weight: normal;
+    font-weight: @baseFontWeight;
     line-height: @baseLineHeight - 10;
     text-align: center;
     text-shadow: 0 1px 0 @white;
