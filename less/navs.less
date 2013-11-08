@@ -18,7 +18,7 @@
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: @grayLighter;
+  background-color: @grayLight;
 }
 
 // Redeclare pull classes because of specifity
@@ -116,13 +116,13 @@
   border: 1px solid transparent;
   .border-radius(4px 4px 0 0);
   &:hover {
-    border-color: @grayLighter @grayLighter #ddd;
+    border-color: @grayLight @grayLight #ddd;
   }
 }
 // Active state, and it's :hover to override normal :hover
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: @gray;
+  color: @grayMedium;
   background-color: @white;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -225,8 +225,8 @@
   border-bottom-color: #fff;
 }
 .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: @gray;
-  border-bottom-color: @gray;
+  border-top-color: @grayMedium;
+  border-bottom-color: @grayMedium;
 }
 
 // Active:hover dropdown links
@@ -340,7 +340,7 @@
   .border-radius(4px 0 0 4px);
 }
 .tabs-left > .nav-tabs > li > a:hover {
-  border-color: @grayLighter #ddd @grayLighter @grayLighter;
+  border-color: @grayLight #ddd @grayLight @grayLight;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover {
@@ -359,7 +359,7 @@
   .border-radius(0 4px 4px 0);
 }
 .tabs-right > .nav-tabs > li > a:hover {
-  border-color: @grayLighter @grayLighter @grayLighter #ddd;
+  border-color: @grayLight @grayLight @grayLight #ddd;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {

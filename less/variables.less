@@ -18,58 +18,45 @@
 @labelColor:			#787675;
 
 // latest definitions
+@blackReal:             #000;
+@black:                 #1a1a1a;
+@grayDark:              #333;
+@grayMedium:            #999;
+@grayMediumLight:       #bfbfbf;
+@grayLight:             #e6e6e6;
+@graySuperLight:        #fafafa;
+
+@white:                 #fff;
+
 @grayLabel: 			#a4a9ad;
 @graySubtitle: 			#676e73;
 @grayLineColor: 		#edf0f2;
 
-
-// old stuff
-@black:                 #000;
-@grayBlue:              #1f7099;
-@grayDark3:             #DFE3E6;
-@grayDark2:             #403f3e;
-@grayDarkBackground:	#242d33;
-@grayDarker:            #222;
-@grayDark:              #333;
-@gray:                  #555;
-@grayLightBackground:   #f0f0f0;
-@grayLight:             #999;
-@grayLight2:            #ddd;
-@grayLight3:            #edf0f2;
-@grayLight4:            #8c8b8b;
-@grayLight5:            #b3b3b3;
-@grayLighter:           #d9d9d9;
-@graySuperLight:        #f7f9fa;
-@grayHighlight:  		#41484d;	
-@grayHighlightText:     #dfe3e6;
-@white:                 #fff;
-
-
 // Accent colors
 // -------------------------
-@pureGreen:				#7a991f;
-@pureGreenLight: 		lighten(@pureGreen, 0.1);
-@pureBlue:              #7a991f;
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #9ebf39;
-@red:                   #9d261d;
-@yellow:                #ffc40d;
-@orange:                #f89406;
-@pink:                  #c3325f;
-@purple:                #7a43b6;
+@greenMedium:           #7e9e20;
+@greenLight:            #9bbf30;
+
+@pureGreen:             @greenMedium;
+
+@blueMedium:            #2e7e99;
+@blueLight:             #4798b2;
+
+@gray:                  @grayMedium;
+@orange:                #ff6600;
+@green:                 #009900;
 
 
 // Scaffolding
 // -------------------------
 @bodyBackground:        @graySuperLight;
-@textColor:             @grayDark;
+@textColor:             @black;
 
 
 // Links
 // -------------------------
-@linkColor:             @pureGreen;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             @greenMedium;
+@linkColorHover:        @greenMedium;
 
 // Typography
 // -------------------------
@@ -78,6 +65,7 @@
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
+@baseFontWeightLight:   100;
 @baseFontWeight:        300;
 @baseFontWeightBold:    400;
 @baseFontFamily:        @sansFontFamily;
@@ -119,7 +107,7 @@
 @btnDangerBackgroundHighlight:      #bd362f;
 
 @btnInverseBackground:              #444;
-@btnInverseBackgroundHighlight:     @grayDarker;
+@btnInverseBackgroundHighlight:     @grayDark;
 
 
 // Forms
@@ -127,7 +115,7 @@
 @inputBackground:               @white;
 @inputBorder:                   #ccc;
 @inputBorderRadius:             3px;
-@inputDisabledBackground:       @grayLighter;
+@inputDisabledBackground:       @grayLight;
 @formActionsBackground:         #f5f5f5;
 
 // Dropdowns
@@ -178,7 +166,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+@hrBorder:                @grayLight;
 
 
 // Horizontal forms & lists
@@ -203,7 +191,7 @@
 @navbarText:                      #777;
 @navbarLinkColor:                 #777;
 @navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColorActive:           @grayMedium;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
@@ -238,7 +226,7 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
+@heroUnitBackground:              @grayLight;
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
