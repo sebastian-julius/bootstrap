@@ -1102,7 +1102,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: #e6e6e6;
+  background-color: #fafafa;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
