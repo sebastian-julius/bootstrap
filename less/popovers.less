@@ -9,7 +9,7 @@
   left: 0;
   z-index: @zindexPopover;
   display: none;
-  width: 236px;
+  min-width: 300px;
   padding: 1px;
   background-color: @popoverBackground;
   -webkit-background-clip: padding-box;
@@ -30,17 +30,15 @@
 
 .popover-title {
   margin: 0; // reset heading margin
-  padding: 8px 14px;
-  font-size: 14px;
+  padding: 14px 14px 2px 14px;
+  font-size: 20px;
   font-weight: @baseFontWeight;
-  line-height: 18px;
-  background-color: @popoverTitleBackground;
-  border-bottom: 1px solid darken(@popoverTitleBackground, 5%);
-  .border-radius(5px 5px 0 0);
+  line-height: 1.3em;
 }
 
 .popover-content {
-  padding: 9px 14px;
+  padding: 9px 14px 14px 14px;
+  line-height: 1.4em;
   p, ul, ol {
     margin-bottom: 0;
   }

@@ -43,6 +43,7 @@
 @blueLight:             #4798b2;
 
 @gray:                  @grayMedium;
+@red:                   #cb7e7c;
 @orange:                #ff6600;
 @green:                 #009900;
 
@@ -242,8 +243,8 @@
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
 @successText:             #468847;
-@successBackground:       #dff0d8;
-@successBorder:           darken(spin(@successBackground, -10), 5%);
+@successBackground:       @grayMedium;
+@successBorder:           @grayMedium;
 
 @infoText:                #3a87ad;
 @infoBackground:          #d9edf7;
@@ -264,7 +265,7 @@
 
 // Special enhancement for popovers
 @popoverArrowOuterWidth:  @popoverArrowWidth + 1;
-@popoverArrowOuterColor:  rgba(0,0,0,.25);
+@popoverArrowOuterColor:  rgba(0,0,0,.05);
 
 
 
