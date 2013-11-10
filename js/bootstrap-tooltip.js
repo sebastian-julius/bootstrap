@@ -162,6 +162,14 @@
 
         this.applyPlacement(tp, placement)
         this.$element.trigger('shown')
+
+          var that = this;
+
+        $('body').on('click', function (e) {
+            if (!that.$element.is(e.target) && that.$element.has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+              that.hide();
+            }
+        });
       }
     }
 
