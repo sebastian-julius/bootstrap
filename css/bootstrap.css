@@ -800,7 +800,7 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 2.325em;
-  padding: 12px 12px;
+  padding: 5px 12px;
   margin-bottom: 0;
   font-size: 15.400000000000002px;
   line-height: 1.6500000000000001em;
