@@ -2213,7 +2213,6 @@ table [class*=span],
 }
 .dropdown-menu a {
   display: block;
-  padding: 3px 20px;
   clear: both;
   font-weight: 300;
   line-height: 1.5em;
