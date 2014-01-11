@@ -1234,8 +1234,8 @@ select:focus:required:invalid:focus {
 }
 .input-append .active,
 .input-prepend .active {
-  background-color: #33ff33;
-  border-color: #009900;
+  background-color: #c7e374;
+  border-color: #7e9e20;
 }
 .input-prepend .add-on,
 .input-prepend .btn {
