@@ -41,7 +41,7 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: @zindexDropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -55,7 +55,7 @@
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   .border-radius(6px);
-  .box-shadow(0 5px 10px rgba(0,0,0,.2));
+  .box-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
           background-clip: padding-box;
@@ -75,10 +75,14 @@
   a {
     display: block;
     clear: both;
+    padding: 0 15px;
     font-weight: @baseFontWeight;
-    line-height: @baseLineHeight;
+    line-height: @baseLineHeight * 1.85;
     color: @dropdownLinkColor;
     white-space: nowrap;
+    text-align: left;
+
+    .transition(background-color 0.1s ease-in);
   }
 }
 
@@ -90,7 +94,6 @@
   text-decoration: none;
   color: @dropdownLinkColorHover;
   background-color: @dropdownLinkBackgroundHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));
 }
 
 // Active state
@@ -101,7 +104,6 @@
   text-decoration: none;
   outline: 0;
   background-color: @dropdownLinkBackgroundActive;
-  #gradient > .vertical(@dropdownLinkBackgroundActive, darken(@dropdownLinkBackgroundActive, 5%));
 }
 
 // Disabled state
