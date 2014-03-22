@@ -514,7 +514,7 @@ cite {
   color: #3a87ad;
 }
 .text-success {
-  color: #468847;
+  color: #ffffff;
 }
 h1,
 h2,
@@ -2986,7 +2986,6 @@ input[type="submit"].btn.btn-mini {
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 1.5em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   -webkit-border-radius: 4px;
@@ -3006,7 +3005,7 @@ input[type="submit"].btn.btn-mini {
 .alert-success {
   background-color: #999999;
   border-color: #999999;
-  color: #468847;
+  color: #ffffff;
 }
 .alert-danger,
 .alert-error {
@@ -4377,11 +4376,11 @@ a.badge:hover {
 }
 .label-success,
 .badge-success {
-  background-color: #468847;
+  background-color: #ffffff;
 }
 .label-success[href],
 .badge-success[href] {
-  background-color: #356635;
+  background-color: #e6e6e6;
 }
 .label-info,
 .badge-info {
